@@ -1,0 +1,234 @@
+dataset: DVS_MNIST
+event_type: True
+learning_rate: 0.001
+num_clss: 10
+time_window: 1000
+spatial_ds_factor: 1.0
+pool_type: AvgPool # One of MaxPool or AvgPool
+
+################################################################################
+################################################################################
+
+spk_cnn_arch_1:
+  inp_lyr:
+    inp_chnls: 2
+    inp_dmx: 34
+    inp_dmy: 34
+
+  #########################
+
+  conv_lyr_1:
+    otp_chnls: 16
+    krnl_size: 3
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  dense_lyr_1: 128
+  dense_lyr_2: 64
+
+################################################################################
+################################################################################
+
+spk_cnn_arch_2:
+  inp_lyr:
+    inp_chnls: 2
+    inp_dmx: 34
+    inp_dmy: 34
+
+  #########################
+
+  conv_lyr_1:
+    otp_chnls: 32
+    krnl_size: 7
+    drpt_prob: 0.1
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  conv_lyr_2:
+    otp_chnls: 32
+    krnl_size: 5
+    drpt_prob: 0.1
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  dense_lyr_1: 512
+  dense_lyr_2: 128
+
+################################################################################
+################################################################################
+
+spk_cnn_arch_3:
+  inp_lyr:
+    inp_chnls: 2
+    inp_dmx: 34
+    inp_dmy: 34
+
+  #########################
+
+  conv_lyr_1:
+    otp_chnls: 48
+    krnl_size: 5
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+  #########################
+
+  conv_lyr_2:
+    otp_chnls: 64
+    krnl_size: 3
+    drpt_prob: 0.1
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  conv_lyr_3:
+    otp_chnls: 128
+    krnl_size: 3
+    drpt_prob: 0.2
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  dense_lyr_1: 512
+  dense_lyr_2: 256
+
+################################################################################
+################################################################################
+
+spk_cnn_arch_4:
+  inp_lyr:
+    inp_chnls: 2
+    inp_dmx: 34
+    inp_dmy: 34
+
+  #########################
+
+  conv_lyr_1:
+    otp_chnls: 24
+    krnl_size: 3
+    stride: 1
+
+  #########################
+
+  conv_lyr_2:
+    otp_chnls: 24
+    krnl_size: 3
+    drpt_prob: 0.1
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  conv_lyr_3:
+    otp_chnls: 48
+    krnl_size: 3
+    drpt_prob: 0.2
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  conv_lyr_4:
+    otp_chnls: 48
+    krnl_size: 3
+    drpt_prob: 0.3
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  dense_lyr_1: 256
+  dense_lyr_2: 128
+
+################################################################################
+################################################################################
+
+spk_cnn_arch_5:
+  inp_lyr:
+    inp_chnls: 2
+    inp_dmx: 34
+    inp_dmy: 34
+
+  #########################
+
+  conv_lyr_1:
+    otp_chnls: 64
+    krnl_size: 3
+    stride: 1
+
+  #########################
+
+  conv_lyr_2:
+    otp_chnls: 64
+    krnl_size: 3
+    drpt_prob: 0.1
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  conv_lyr_3:
+    otp_chnls: 128
+    krnl_size: 3
+    drpt_prob: 0.2
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  conv_lyr_4:
+    otp_chnls: 128
+    krnl_size: 3
+    drpt_prob: 0.3
+
+    stride: 1
+    pool_size: 2
+
+    #stride: 2
+
+  #########################
+
+  dense_lyr_1: 1024
+  dense_lyr_2: 1024
+################################################################################
+################################################################################
