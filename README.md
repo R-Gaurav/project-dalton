@@ -1,6 +1,8 @@
 # project-dalton
 
-DALTON - <ins>**D**</ins>eep Loc<ins>**A**</ins>l <ins>**L**</ins>earning via local Weigh<ins>**T**</ins>s and Surr<ins>**O**</ins>gate-Derivative Tra<ins>**N**</ins>sfer
+[DALTON](https://ieeexplore.ieee.org/abstract/document/10653735) - <ins>**D**</ins>eep Loc<ins>**A**</ins>l <ins>**L**</ins>earning via local Weigh<ins>**T**</ins>s and Surr<ins>**O**</ins>gate-Derivative Tra<ins>**N**</ins>sfer
+
+Accepted at: IEEE Transactions on Emerging Topics in Computing
 
 ## Dependency:
 
